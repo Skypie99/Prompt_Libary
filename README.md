@@ -35,6 +35,10 @@ Then open [http://localhost:3000](http://localhost:3000).
 
 Other useful scripts: `npm run build` (static export to `out/`), `npm test` (Vitest), `npm run typecheck`, and `npm run lint`.
 
+## License
+
+MIT — see [LICENSE](LICENSE). Use it, fork it, ship it.
+
 ---
 
 Built by Sky Halisky — [GitHub](https://github.com/skypie99) · [LinkedIn](https://www.linkedin.com/in/skyler-halisky)
