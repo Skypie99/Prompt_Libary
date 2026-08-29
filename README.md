@@ -1,6 +1,6 @@
 # Prompt Library
 
-A fast, private prompt library for the browser. Save your best AI prompts, fill in their `{{variables}}` from a clean form, and run them against the Anthropic API with your own key — all without an account, a backend, or a single byte of your data leaving your machine.
+A fast, private prompt library for the browser. Save your best AI prompts, fill in their `{{variables}}` from a clean form, and run them against the Anthropic API with your own key — all without an account or a backend of mine in the middle. When you press Run, your browser sends the prompt and your key directly to Anthropic; that's the one intentional network call in the whole app.
 
 Under the hood it runs on a from-scratch streaming client for the Anthropic Messages API — a typed error taxonomy, `retry-after` backoff with a live countdown, and token-by-token rendering — shipped as a static export with a real WCAG 2.2 AA pass and a full test suite.
 
@@ -16,7 +16,7 @@ Everything is on-device by design:
 
 - **Bring your own key.** You paste your own Anthropic API key; it's stored only in your browser and used only to call the API directly from your machine.
 - **All data stays in this browser.** Your prompts, run history, and settings live in `localStorage`. There is no server, no account, and no telemetry — nothing is collected and nothing is sent anywhere except the Anthropic API call you trigger.
-- **Static by construction.** The app ships as a static export with no backend, so there's nowhere for your data to go even if it wanted to.
+- **Static by construction.** The app ships as a static export with no backend of mine, no account system, and no telemetry — the only place your data goes is the Anthropic API call you trigger yourself.
 
 ## Stack
 
