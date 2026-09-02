@@ -1,10 +1,11 @@
 /** @type {import('next').NextConfig} */
 
-// On Vercel the site is served from the domain root, so no basePath or
+// Served from the domain root on GitHub Pages (see
+// .github/workflows/deploy.yml and the CNAME files), so no basePath or
 // assetPrefix is needed. The static export runs cleanly at / both locally
 // and in production.
 const nextConfig = {
-  // Emit a fully static site into ./out — Vercel serves it from the CDN edge.
+  // Emit a fully static site into ./out, which the GitHub Pages workflow publishes.
   output: "export",
 
   // Pin the workspace root to THIS folder. Without it, Next.js can get confused
