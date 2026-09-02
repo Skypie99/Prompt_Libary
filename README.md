@@ -1,6 +1,6 @@
 # Prompt Library
 
-A fast, private prompt library for the browser. Save your best AI prompts, fill in their `{{variables}}` from a clean form, and run them against the Anthropic API with your own key — all without an account, a backend, or a single byte of your data leaving your machine.
+A fast, private prompt library for the browser. Save your best AI prompts, fill in their `{{variables}}` from a clean form, and run them against the Anthropic API with your own key — all without an account or a backend of mine in the middle. When you run a prompt, your browser sends it and your key straight to Anthropic; that's the one intentional network call in the app.
 
 Under the hood it runs on a from-scratch streaming client for the Anthropic Messages API — a typed error taxonomy, `retry-after` backoff with a live countdown, and token-by-token rendering — shipped as a static export with a real WCAG 2.2 AA pass and a full test suite.
 
@@ -12,11 +12,11 @@ Under the hood it runs on a from-scratch streaming client for the Anthropic Mess
 
 ## Privacy model
 
-Everything is on-device by design:
+Your library is on-device by design; the one thing that leaves is the API call you trigger:
 
-- **Bring your own key.** You paste your own Anthropic API key; it's stored only in your browser and used only to call the API directly from your machine.
-- **All data stays in this browser.** Your prompts, run history, and settings live in `localStorage`. There is no server, no account, and no telemetry — nothing is collected and nothing is sent anywhere except the Anthropic API call you trigger.
-- **Static by construction.** The app ships as a static export with no backend, so there's nowhere for your data to go even if it wanted to.
+- **Bring your own key.** You paste your own Anthropic API key; it's stored only in your browser and sent only to Anthropic, only when you run a prompt.
+- **Your library stays in this browser.** Your prompts, run history, and settings live in `localStorage`. There is no account and no telemetry — nothing is collected, and nothing is sent anywhere except the Anthropic API call you trigger.
+- **No backend of its own.** The app ships as a static export with no server, so a run goes directly from your browser to Anthropic — there's no middleman collecting your prompts along the way.
 
 ## Stack
 

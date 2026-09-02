@@ -489,12 +489,16 @@ export function HomeClient({ prompts: seedPrompts }: { prompts: Prompt[] }) {
               Search, customize, and run your best prompts with Claude — in seconds.
             </p>
 
-            {/* Quiet trust line — names the WHAT (a private, on-device,
-                bring-your-own-key runner) in the first 5 seconds, the most
-                recruiter-legible fact. Restrained per the utility-app bar. */}
+            {/* Quiet trust line — names the WHAT (a private, bring-your-own-key
+                runner: the library lives locally, a run goes straight to
+                Anthropic) in the first 5 seconds, the most recruiter-legible
+                fact. Restrained per the utility-app bar. Kept technically exact
+                — no "never leaves your browser" overclaim, since a run does
+                send your key + prompt to Anthropic. */}
             <p className="mt-3 flex max-w-xl items-center gap-2 text-sm text-ink-soft dark:text-paper-muted">
               <LockIcon aria-hidden className="h-3.5 w-3.5 shrink-0" />
-              No account, no backend — your key and prompts never leave your browser.
+              No account, no backend — your library stays in this browser; runs go directly to
+              Anthropic.
             </p>
 
             <button
@@ -868,7 +872,7 @@ export function HomeClient({ prompts: seedPrompts }: { prompts: Prompt[] }) {
                 >
                   Sky Halisky
                 </a>{" "}
-                · All data stays in this browser ·{" "}
+                · Your library stays in this browser ·{" "}
                 <a
                   href="https://skypistudio.com/contact/"
                   target="_blank"

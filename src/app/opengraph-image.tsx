@@ -114,7 +114,7 @@ export default function Image() {
               display: "flex",
             }}
           >
-            Run your prompts against Claude — streaming, your key, on-device.
+            Run your prompts against Claude — streaming, your key, no backend.
           </div>
         </div>
 
