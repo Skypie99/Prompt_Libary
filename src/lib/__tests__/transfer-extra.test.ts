@@ -416,7 +416,6 @@ describe("parseImport — tokensUsed field (F-usage-b)", () => {
         "p-1": [
           makeRun({ id: "r-good" }), // valid, no tokensUsed
           makeRun({ id: "r-good-tokens", tokensUsed: { input: 10, output: 20 } }),
-          // @ts-expect-error — deliberate invalid shape for test
           { ...makeRun({ id: "r-bad-tokens" }), tokensUsed: { input: "nope", output: 5 } },
         ],
       },

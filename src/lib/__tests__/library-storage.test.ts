@@ -60,7 +60,6 @@ function installFakeStorage(): FakeStore {
   };
   // @ts-expect-error — test stub
   globalThis.window = { localStorage: stub };
-  // @ts-expect-error — test stub
   globalThis.localStorage = stub;
   return store;
 }
@@ -217,7 +216,6 @@ describe("writeJSON + setStorageWriteFailureHandler", () => {
     };
     // @ts-expect-error — test stub
     globalThis.window = { localStorage: erroringStorage };
-    // @ts-expect-error — test stub
     globalThis.localStorage = erroringStorage;
 
     const result = writeJSON("promptlib:x", "y");
