@@ -170,7 +170,6 @@ describe("saveSettings — write failure surfacing (B2)", () => {
     };
     // @ts-expect-error -- test stub
     globalThis.window = { localStorage: throwingStorage };
-    // @ts-expect-error -- test stub
     globalThis.localStorage = throwingStorage;
 
     const failures: unknown[] = [];

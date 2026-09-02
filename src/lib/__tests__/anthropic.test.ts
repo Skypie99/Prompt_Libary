@@ -231,7 +231,6 @@ describe("streamClaude onUsage callback (F-usage-a)", () => {
     // AbortError before any SSE events are read, so onUsage must not fire.
     const abortError = new DOMException("The user aborted a request.", "AbortError");
     const original = globalThis.fetch;
-    // @ts-expect-error — test mock
     globalThis.fetch = async () => {
       throw abortError;
     };

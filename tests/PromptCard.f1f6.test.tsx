@@ -26,6 +26,12 @@ const prompt: Prompt = {
   category: "Engineering",
   tags: ["code", "debugging"],
   body: "You are a senior engineer. Debug {{language}} error:\n{{stacktrace}}",
+  variables: [
+    { name: "language", label: "Language" },
+    { name: "stacktrace", label: "Stack trace" },
+  ],
+  createdAt: "2026-05-29T00:00:00Z",
+  isSeed: false,
 };
 
 const FOCUSABLE = 'a[href], button, input, select, textarea, [tabindex]:not([tabindex="-1"])';

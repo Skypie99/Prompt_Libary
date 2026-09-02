@@ -95,7 +95,7 @@ const PROMPT_WITH_VAR: Prompt = {
   title: "Var Prompt",
   description: "A test prompt with a variable.",
   body: "Say hello to {{name}}.",
-  variables: [{ name: "name", label: "Name", placeholder: "", multiline: false }],
+  variables: [{ name: "name", label: "Name", placeholder: "" }],
   category: "Testing",
   tags: [],
   createdAt: "2026-05-29T00:00:00Z",

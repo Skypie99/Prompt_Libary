@@ -102,7 +102,6 @@ function installFakeStorage(): FakeStore {
   };
   // @ts-expect-error — test stub
   globalThis.window = { localStorage: stub };
-  // @ts-expect-error — test stub
   globalThis.localStorage = stub;
   return store;
 }
